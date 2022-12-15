@@ -23,7 +23,8 @@ if parmLen > 1:
 #######################################################
 def isPrime(num):
     isPrime = False
-    for factors in range(2, num):
+    factor = int(num/2)
+    for factors in range(2, factor):
         if num % factors == 0:
             # is not prime
             isPrime = False

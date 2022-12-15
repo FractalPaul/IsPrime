@@ -11,7 +11,7 @@ class TestPrime(unittest.TestCase):
         self.assertTrue(prime.isPrime(19))
         self.assertTrue(prime.isPrime(19997))
         self.assertTrue(prime.isPrime(199933))
-        #self.assertTrue(prime.isPrime(433494437))
+        self.assertTrue(prime.isPrime(433494437))
 
     def test_with_known_composite_numbers(self):
         self.assertFalse(prime.isPrime(22))
