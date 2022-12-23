@@ -22,15 +22,17 @@ if parmLen > 1:
 # return True if Prime otherwise False for Composite.
 #######################################################
 def isPrime(num):
-    isPrime = False
+    isPrime = True
+    if num==2 or num==3:
+        return isPrime
+    if num <=1:
+        return False
     factor = int(num/2)
     for factors in range(2, factor):
         if num % factors == 0:
             # is not prime
             isPrime = False
-            break
-        else:
-            isPrime = True
+            break        
     return isPrime
 
 isp = isPrime(num)
